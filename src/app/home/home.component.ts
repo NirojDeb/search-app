@@ -1,6 +1,6 @@
 import { Component, NgIterable, OnInit, Optional, Self } from '@angular/core';
 import { UserService } from '../user.service';
-import { IUser } from 'src/models/IUser';
+import { IUser } from '../../models/IUser'
 import { HistoryService } from '../history.service';
 
 @Component({
