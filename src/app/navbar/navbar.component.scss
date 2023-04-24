@@ -1,0 +1,11 @@
+.navContainer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+
+}
+
+.active{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}

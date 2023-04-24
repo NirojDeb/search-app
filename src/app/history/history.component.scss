@@ -1,0 +1,51 @@
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.searchContinaer{
+    // text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.searchHeader{
+    display: flex;
+    width: 500px;
+    justify-content: flex-start;
+}
+
+.contents{
+    width: 500px;
+}
+
+.clearBtn{
+    background-color: #5cb85c !important;
+    width: 200px;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.userContainer{
+    display: flex;
+    justify-content: flex-start;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.cell{
+    width: 33%;
+}
+
+.border{
+    border-top: 1px solid;
+    margin: 10px 0px;
+}

@@ -1,0 +1,25 @@
+<div class="header">Your search history</div>
+<div *ngIf="history.length" class="searchContinaer">
+    <div>
+        <div class="searchHeader">
+            <div class="cell">Search Term</div>
+            <div class="cell">User Image</div>
+            <div class="cell">User Name</div>
+        </div>
+        <div class="contents">
+            <div *ngFor="let h of history">
+                <div class="userContainer" *ngFor="let u of h['users']">
+                    <div class="cell" >{{h['searchTerm']}}</div>
+                    <div class="cell"><img [src]="u.avatarUrl" /></div>
+                    <div class="cell">{{u.name}}</div>
+                </div>
+                <div class="border"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="btnContainer">
+    <button (click)="onClearHistory()"  class="clearBtn" mat-raised-button color="primary">Clear History</button>
+</div>

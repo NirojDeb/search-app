@@ -1,0 +1,24 @@
+<div class="homeWrapper">
+    <div>Search Github User</div>
+
+    <div>
+        <mat-form-field appearance="fill">
+            <mat-icon matPrefix>search</mat-icon>
+            <input [(ngModel)]="searchString" matInput type="text" />
+        </mat-form-field>
+    </div>
+    <div>
+        <button (click)="onSearchClicked()"  class="searchBtn" mat-raised-button color="primary">Search</button>
+    </div>
+
+    <div *ngIf="users">
+        Search Results
+        <div *ngFor="let user of users;index as i">
+            <app-profile  [url]="user.avatarUrl" [name]="user.name"></app-profile>
+        </div>
+    </div>
+    
+    
+</div>
+
+
